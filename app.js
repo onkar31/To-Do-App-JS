@@ -18,6 +18,13 @@ while(true){
         let task = prompt("Please enter the task you want to add");
         todo.push(task);
         console.log("Task added successfully.");
+    }else if(req == "delete"){
+        let idx = parseInt(prompt("Please enter the task index"));
+        if( idx >= 0 && idx <= todo.length){
+            todo.splice(idx-1, 1);
+            console.log("Task Deleted Successfully!")
+        }else
+        console.log("Invalid index entered!")   
     }
 
     req = prompt("Please enter your request");
