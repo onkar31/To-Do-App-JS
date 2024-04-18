@@ -22,9 +22,11 @@ while(true){
         let idx = parseInt(prompt("Please enter the task index"));
         if( idx >= 0 && idx <= todo.length){
             todo.splice(idx-1, 1);
-            console.log("Task Deleted Successfully!")
+            console.log("Task Deleted Successfully!");
         }else
-        console.log("Invalid index entered!")   
+        console.log("Invalid index entered!");   
+    }else{
+        console.log("wrong request");
     }
 
     req = prompt("Please enter your request");
